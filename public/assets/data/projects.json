@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "image": "/assets/images/project/1/1.jpg",
+        "title": "HMG Smart City",
+        "year": "2021"
+    },
+    {
+        "id": 2,
+        "image": "/assets/images/project/2/1.jpg",
+        "title": "HOUSE for ART&TREES",
+        "year": "2024"
+    },
+    {
+        "id": 3,
+        "image": "/assets/images/project/3/1.jpg",
+        "title": "TRINITY",
+        "year": "2023"
+    },
+    {
+        "id": 4,
+        "image": "/assets/images/project/4/1.jpg",
+        "title": "AFER Hanging",
+        "year": "2022"
+    },
+    {
+        "id": 5,
+        "image": "/assets/images/project/5/1.jpg",
+        "title": "Gridscape",
+        "year": "2024"
+    }
+]

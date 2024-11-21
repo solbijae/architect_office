@@ -1,4 +1,4 @@
-import { NavContainer, NavList, NavItem } from "styles/Navbar";
+import { NavContainer, NavList, NavItem } from 'styles/Navbar';
 
 function Navbar() {
   return (

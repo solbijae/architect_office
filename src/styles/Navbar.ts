@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 // Nav 컨테이너 스타일 (clearfix 포함)
 export const NavContainer = styled.div`
-  height: 100px;
+  height: 150px;
   display: block;
   background-color: #f7f7f7;
-  &:after { /* clearfix */
-    content: "";
+  &:after {
+    /* clearfix */
+    content: '';
     display: table;
     clear: both;
   }
@@ -27,7 +28,7 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   float: left;
   margin: 0 15px;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
   &:hover {

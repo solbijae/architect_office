@@ -91,6 +91,9 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+#root {
+  background-color: #f7f7f7;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
