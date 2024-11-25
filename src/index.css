@@ -90,8 +90,15 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Roboto Regular';
 }
-#root {
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+body {
   background-color: #f7f7f7;
 }
 /* HTML5 display-role reset for older browsers */

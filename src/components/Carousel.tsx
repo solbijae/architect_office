@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import styled from 'styled-components';
+import useFetchData from 'hooks/useFetchData';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {
@@ -11,25 +10,8 @@ import {
   ProjectInfo,
 } from 'styles/Carousel';
 
-// Types
-interface Project {
-  id: number;
-  title: string;
-  year: string;
-  image: string;
-}
 function ProjectCarousel() {
-  const [projects, setProjects] = useState<Project[]>([]);
-
-  useEffect(() => {
-    fetch('/assets/data/projects.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setProjects(data);
-        console.log(data);
-      })
-      .catch((error) => console.error('Error loading JSON data:', error));
-  }, []);
+  const { data: projects, error } = useFetchData('/assets/data/projects.json');
 
   const settings = {
     dots: false, // Removed dots
@@ -51,25 +33,26 @@ function ProjectCarousel() {
   return (
     <SliderContainer>
       <Slider {...settings}>
-        {projects.map((project) => (
-          <ProjectSlide key={project.id}>
-            <ImageWrapper>
-              <ProjectImage
-                src={project.image}
-                alt={project.title}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.onerror = null;
-                  target.src = '/placeholder.png';
-                }}
-              />
-            </ImageWrapper>
-            <ProjectInfo>
-              <p className="project-title">{project.title}</p>
-              <p className="project-year">{project.year}</p>
-            </ProjectInfo>
-          </ProjectSlide>
-        ))}
+        {projects &&
+          projects.map((project) => (
+            <ProjectSlide key={project.id}>
+              <ImageWrapper>
+                <ProjectImage
+                  src={project.image}
+                  alt={project.title}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.onerror = null;
+                    target.src = '/placeholder.png';
+                  }}
+                />
+              </ImageWrapper>
+              <ProjectInfo>
+                <p className="project-title">{project.title}</p>
+                <p className="project-year">{project.year}</p>
+              </ProjectInfo>
+            </ProjectSlide>
+          ))}
       </Slider>
     </SliderContainer>
   );

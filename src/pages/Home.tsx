@@ -42,7 +42,7 @@ function Home() {
     <HomeContainer className="homeContainer">
       <Navbar />
       <ImageContainer>
-        <Image src="/assets/images/motto.jpg" alt="motto" />
+        <Image src="/assets/images/home/motto.jpg" alt="motto" />
       </ImageContainer>
       <ProjectWrap>
         <TitleContainer>
