@@ -9,9 +9,12 @@ import {
   ProjectImage,
   ProjectInfo,
 } from 'styles/Carousel';
+import { Project } from 'types/project';
 
 function ProjectCarousel() {
-  const { data: projects, error } = useFetchData('/assets/data/projects.json');
+  const { data: projects, error } = useFetchData<Project[]>(
+    '/assets/data/projects.json',
+  );
 
   const settings = {
     dots: false, // Removed dots

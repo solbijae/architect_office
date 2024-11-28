@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Project } from 'types/projects';
 
-function useFetchData(url: string) {
-  const [data, setData] = useState<Project[] | null>(null);
+function useFetchData<T>(url: string) {
+  const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {

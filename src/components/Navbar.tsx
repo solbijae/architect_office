@@ -1,4 +1,4 @@
-import { NavContainer, NavList, NavItem } from 'styles/Navbar';
+import { NavContainer, NavLogo, NavList, NavItem } from 'styles/Navbar';
 import { Link, useLocation } from 'react-router-dom'; // Link 임포트
 
 function Navbar() {
@@ -6,17 +6,24 @@ function Navbar() {
 
   return (
     <NavContainer>
+      <NavLogo>
+        <Link to="/">
+          <img src="/assets/images/nav/logo.png" alt="top logo" />
+        </Link>
+      </NavLogo>
       <NavList>
         <NavItem isActive={location.pathname === '/'}>
-          <Link to='/'>HOME</Link>
+          <Link to="/">HOME</Link>
         </NavItem>
         <NavItem isActive={location.pathname === '/projects'}>
-          <Link to='/projects'>PROJECTS</Link>
+          <Link to="/projects">PROJECTS</Link>
         </NavItem>
         <NavItem isActive={location.pathname === '/profile'}>
-          <Link to='/profile'>PROFILE</Link>
+          <Link to="/profile">PROFILE</Link>
         </NavItem>
-        <NavItem>HIGHLIGHTS</NavItem>
+        <NavItem isActive={location.pathname === '/highlights'}>
+          <Link to="/highlights">HIGHLIGHTS</Link>
+        </NavItem>
         <NavItem>CONTACT</NavItem>
       </NavList>
     </NavContainer>

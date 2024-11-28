@@ -11,6 +11,7 @@ export const ProjectWrap = styled.div`
   grid-template-columns: repeat(4, 290px);
   gap: 10px;
   width: 100%;
+  padding-top: 48px;
 `;
 
 export const ImageWrap = styled.div`

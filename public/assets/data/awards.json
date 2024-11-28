@@ -1,0 +1,422 @@
+[{
+    "year": 2024,
+    "data": [{
+        "id": 1,
+        "title": "World Architecture Festival 2024 WAF Completed Buildings: Office",
+        "award": "Shortlist",
+        "organizer": "GRIDSCAPE"
+      },
+      {
+        "id": 2,
+        "title": "World Architecture Festival 2024 WAF Completed Buildings: Hotel & Leisure",
+        "award": "Shortlist",
+        "organizer": "WIND FENCE"
+      },
+      {
+        "id": 3,
+        "title": "World Architecture Festival 2024 WAF Future Project: Competition Entries",
+        "award": "Shortlist",
+        "organizer": "HOUSE FOR ART & TREES"
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "data": [{
+        "id": 1,
+        "title": "German Design Award 2024",
+        "award": "Winner",
+        "organizer": "Plait Villa"
+      },
+      {
+        "id": 2,
+        "title": "German Design Award 2024",
+        "award": "Winner",
+        "organizer": "Janus"
+      },
+      {
+        "id": 3,
+        "title": "German Design Award 2024",
+        "award": "Winner",
+        "organizer": "Wind Fence 2"
+      },
+      {
+        "id": 4,
+        "title": "German Design Award 2024",
+        "award": "Special Mention",
+        "organizer": "Multi Terrace House"
+      },
+      {
+        "id": 5,
+        "title": "World Architecture Festival 2023 WAF Future Project: Culture",
+        "award": "Shortlist",
+        "organizer": "Under the Tree"
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "data": [{
+        "id": 1,
+        "title": "The International Architecture Awards The Chicago Athenaeum 2022",
+        "award": "Honorable Mention",
+        "organizer": "Multi Terrace House"
+      },
+      {
+        "id": 2,
+        "title": "The International Architecture Awards The Chicago Athenaeum 2022",
+        "award": "Honorable Mention",
+        "organizer": "Janus"
+      },
+      {
+        "id": 3,
+        "title": "The International Architecture Awards The Chicago Athenaeum 2022",
+        "award": "Honorable Mention",
+        "organizer": "Garage House"
+      },
+      {
+        "id": 4,
+        "title": "제11회 강남구 아름다운 건축상",
+        "award": "장려상",
+        "organizer": "Metal Curtain Building(JJJ)"
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "data": [{
+        "id": 1,
+        "title": "Chosun Future Architecture Awards",
+        "award": "Winner",
+        "organizer": "AFER"
+      },
+      {
+        "id": 2,
+        "title": "Architecture MasterPrize(AMP)",
+        "award": "Honorable Mention",
+        "organizer": "Multi Terrace House"
+      },
+      {
+        "id": 3,
+        "title": "30th Korean Architecture Awards",
+        "award": "Award",
+        "organizer": "Smurf Village School"
+      },
+      {
+        "id": 4,
+        "title": "30th Korean Architecture Awards",
+        "award": "Award",
+        "organizer": "Multi Terrace House"
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "data": [{
+        "id": 1,
+        "title": "Architecture MasterPrize(AMP)",
+        "award": "Honorable Mention",
+        "organizer": "JJJ"
+      },
+      {
+        "id": 2,
+        "title": "Architecture MasterPrize(AMP)",
+        "award": "Honorable Mention",
+        "organizer": "Wind Fence"
+      },
+      {
+        "id": 3,
+        "title": "Architecture MasterPrize(AMP)",
+        "award": "Honorable Mention",
+        "organizer": "The street to the Han River"
+      },
+      {
+        "id": 4,
+        "title": "Architecture MasterPrize(AMP)",
+        "award": "Honorable Mention",
+        "organizer": "Rock&Branch"
+      },
+      {
+        "id": 5,
+        "title": "2020 International Architecture Awards The Chicago Athenaeum",
+        "award": "Winner",
+        "organizer": "Private D House"
+      },
+      {
+        "id": 6,
+        "title": "2020 International Architecture Awards The Chicago Athenaeum",
+        "award": "Winner",
+        "organizer": "The Hug"
+      }
+    ]
+  },
+  {
+    "year": 2018,
+    "data": [{
+      "id": 1,
+      "title": "German Design Award 2018",
+      "award": "Award",
+      "organizer": "The Void"
+    }]
+  },
+  {
+    "year": 2017,
+    "data": [{
+        "id": 1,
+        "title": "Gwacheon Boulevard Area Revitalization Plan Research Competition",
+        "award": "Prize Winner",
+        "organizer": ""
+      },
+      {
+        "id": 2,
+        "title": "Asian Townscape Awards 2017",
+        "award": "Award",
+        "organizer": "First Greeting Street"
+      },
+      {
+        "id": 3,
+        "title": "26th Korean Architecture Awards",
+        "award": "Award",
+        "organizer": "Rock&Branch"
+      },
+      {
+        "id": 4,
+        "title": "ARCASIA AWARDS FOR ARCHITECTURE (AAA) 2017",
+        "award": "Honorable Mention",
+        "organizer": "Mug Hakdong"
+      },
+      {
+        "id": 5,
+        "title": "35th Seoul Architecture Awards",
+        "award": "Award",
+        "organizer": "Rock&Branch"
+      },
+      {
+        "id": 6,
+        "title": "THE CHICAGO ATHENAEUM | International Architecture Awards",
+        "award": "Award",
+        "organizer": "Rock&Branch"
+      }
+    ]
+  },
+  {
+    "year": 2016,
+    "data": [{
+        "id": 1,
+        "title": "Korea Public Building Award",
+        "award": "First Prize",
+        "organizer": "The Void"
+      },
+      {
+        "id": 2,
+        "title": "Asia Interior Design Award",
+        "award": "Golden Prize",
+        "organizer": "Kangbuk Samsung Hospital"
+      },
+      {
+        "id": 3,
+        "title": "25th Korean Architecture Awards",
+        "award": "Award",
+        "organizer": "Hanok 3.0"
+      },
+      {
+        "id": 4,
+        "title": "Yangju-si Western Sportscenter Design Competition",
+        "award": "Prize Winner",
+        "organizer": ""
+      },
+      {
+        "id": 5,
+        "title": "Daejo-dong, Eunpyeong-gu Seniors Welfare Center Design Competition",
+        "award": "Prize Winner",
+        "organizer": ""
+      }
+    ]
+  },
+  {
+    "year": 2015,
+    "data": [{
+        "id": 1,
+        "title": "Nowon-gu Cultural Welfare Center Design Competition",
+        "award": "Prize Winner",
+        "organizer": "Kangaroo House"
+      },
+      {
+        "id": 2,
+        "title": "24th Korean Architecture Awards",
+        "award": "Award",
+        "organizer": ""
+      },
+      {
+        "id": 3,
+        "title": "The Good Place Award",
+        "award": "Award",
+        "organizer": ""
+      },
+      {
+        "id": 4,
+        "title": "Architectural Institute of Korea Award",
+        "award": "Muae Lee Kwangro Prize",
+        "organizer": ""
+      }
+    ]
+  },
+  {
+    "year": 2014,
+    "data": [{
+        "id": 1,
+        "title": "Boramae Park Field Workers Design Competition",
+        "award": "Prize Winner",
+        "organizer": ""
+      },
+      {
+        "id": 2,
+        "title": "Anti-Aging Design (AAD)",
+        "award": "Honorable Mention",
+        "organizer": "Anti-Aging Industrial Support Center"
+      },
+      {
+        "id": 3,
+        "title": "Seosomun-bakk Historic Site Design Competition",
+        "award": "Honorable Mention",
+        "organizer": "88 Park of 88 Memories"
+      }
+    ]
+  },
+  {
+    "year": 2013,
+    "data": [{
+        "id": 1,
+        "title": "KIM SWOO GEUN Preview Award",
+        "award": "Award",
+        "organizer": "Mug Hakdong"
+      },
+      {
+        "id": 2,
+        "title": "36th KIA(Korean Institute of Architects) Award 2013",
+        "award": "Best 7, Architecture of The Year",
+        "organizer": "Mug Hakdong"
+      }
+    ]
+  },
+  {
+    "year": 2011,
+    "data": [{
+      "id": 1,
+      "title": "CNN Travel",
+      "award": "Seoul's Architectural Wonders",
+      "organizer": "Floating House"
+    }]
+  },
+  {
+    "year": 2010,
+    "data": [{
+      "id": 1,
+      "title": "The Good Place Award",
+      "award": "Grand Prize",
+      "organizer": "Gukgogae Culture Street"
+    }]
+  },
+  {
+    "year": 2009,
+    "data": [{
+        "id": 1,
+        "title": "Yongsan National Park Design Competition",
+        "award": "Third Place",
+        "organizer": "Floating House"
+      },
+      {
+        "id": 2,
+        "title": "Korean Young Architect Awards",
+        "award": "Award",
+        "organizer": ""
+      }
+    ]
+  },
+  {
+    "year": 2008,
+    "data": [{
+        "id": 1,
+        "title": "Chungwoon University Library Design Competition",
+        "award": "Prize Winner",
+        "organizer": ""
+      },
+      {
+        "id": 2,
+        "title": "Tongyeong Resort PF",
+        "award": "Prize Winner",
+        "organizer": ""
+      },
+      {
+        "id": 3,
+        "title": "Gyeonggi-do North-East Development Design Competition",
+        "award": "Third Place",
+        "organizer": ""
+      },
+      {
+        "id": 4,
+        "title": "SinUljin Power Plant Residence Design Competition",
+        "award": "Second Place",
+        "organizer": ""
+      },
+      {
+        "id": 5,
+        "title": "High-Speed Elevator Interior Design Competition",
+        "award": "Second Place",
+        "organizer": ""
+      }
+    ]
+  },
+  {
+    "year": 2005,
+    "data": [{
+      "id": 1,
+      "title": "Gori Nuclear Plant Headquarter Competition",
+      "award": "First Prize",
+      "organizer": ""
+    }]
+  },
+  {
+    "year": 2003,
+    "data": [{
+      "id": 1,
+      "title": "38th Central Glass International Design Competition",
+      "award": "Honorable Mention",
+      "organizer": ""
+    }]
+  },
+  {
+    "year": 2000,
+    "data": [{
+        "id": 1,
+        "title": "9th Boston Society of Architects Unbuilt Architecture Competition",
+        "award": "Award",
+        "organizer": ""
+      },
+      {
+        "id": 2,
+        "title": "9th Boston Society of Architects Unbuilt Architecture Competition",
+        "award": "Honorable Mention",
+        "organizer": ""
+      }
+    ]
+  },
+  {
+    "year": 1999,
+    "data": [{
+      "id": 1,
+      "title": "14th Membrane International Design Competition",
+      "award": "Third Place",
+      "organizer": ""
+    }]
+  },
+  {
+    "year": 1998,
+    "data": [{
+      "id": 1,
+      "title": "Healthcare Environment Award Competition",
+      "award": "First Place",
+      "organizer": ""
+    }]
+  }
+]

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 // Nav 컨테이너 스타일 (clearfix 포함)
 export const NavContainer = styled.div`
-  height: 150px;
+  position: relative;
+  height: 100px;
   display: block;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ccc;
@@ -16,13 +17,19 @@ export const NavContainer = styled.div`
   }
 `;
 
+export const NavLogo = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+`;
+
 // ul 스타일
 export const NavList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   height: 100%;
 `;
@@ -31,7 +38,6 @@ export const NavList = styled.ul`
 export const NavItem = styled.li<{ isActive?: boolean }>`
   float: left;
   margin: 0 15px;
-  font-size: 1.1rem;
   font-weight: ${(props) => (props.isActive ? '600' : '500')};
   text-decoration: ${(props) => (props.isActive ? 'underline' : 'none')};
   text-underline-offset: 4px;

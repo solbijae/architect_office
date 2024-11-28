@@ -8,9 +8,12 @@ import {
 import useFetchData from 'hooks/useFetchData';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
+import { Project } from 'types/project';
 
 function Projects() {
-  const { data: projects, error } = useFetchData('/assets/data/projects.json');
+  const { data: projects, error } = useFetchData<Project[]>(
+    '/assets/data/projects.json',
+  );
 
   return (
     <ProjectsContainer>

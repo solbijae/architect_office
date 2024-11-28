@@ -9,7 +9,7 @@ export const ProfileContainer = styled.div`
 
 export const ProfileNav = styled.nav`
   padding: 48px 0;
-  
+
   ul {
     display: flex;
     justify-content: center;
@@ -23,13 +23,12 @@ interface NavItemProps {
 }
 
 export const NavItem = styled.li<NavItemProps>`
-  font-size: 1.1rem;
   font-weight: ${({ isActive }) => (isActive ? '600' : '400')};
   color: ${({ isActive }) => (isActive ? '#000' : '#666')};
   cursor: pointer;
   position: relative;
   padding-bottom: 8px;
-  
+
   &:after {
     content: '';
     position: absolute;
@@ -43,7 +42,7 @@ export const NavItem = styled.li<NavItemProps>`
 
   &:hover {
     color: #000;
-    
+
     &:after {
       background-color: #000;
     }
@@ -55,7 +54,7 @@ export const ProfileWrap = styled.div`
   grid-template-columns: minmax(300px, 400px) 1fr;
   gap: 48px;
   padding: 24px 0;
-  
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -74,21 +73,21 @@ export const ProfileInfoWrap = styled.div`
   max-height: 800px;
   overflow-y: auto;
   padding-right: 16px;
-  
+
   /* Styled scrollbar */
   &::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   &::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 4px;
   }
-  
+
   &::-webkit-scrollbar-thumb {
     background: #ddd;
     border-radius: 4px;
-    
+
     &:hover {
       background: #ccc;
     }
@@ -96,7 +95,7 @@ export const ProfileInfoWrap = styled.div`
 
   div {
     margin-bottom: 32px;
-    
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -108,7 +107,7 @@ export const ProfileInfoWrap = styled.div`
     margin-bottom: 16px;
     display: flex;
     align-items: center;
-    
+
     &:before {
       content: '';
       display: inline-block;
@@ -130,7 +129,7 @@ export const ProfileInfoWrap = styled.div`
     color: #555;
     line-height: 1.5;
     transition: color 0.2s ease;
-    
+
     &:hover {
       color: #000;
     }
