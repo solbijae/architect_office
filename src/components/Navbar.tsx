@@ -24,7 +24,9 @@ function Navbar() {
         <NavItem isActive={location.pathname === '/highlights'}>
           <Link to="/highlights">HIGHLIGHTS</Link>
         </NavItem>
-        <NavItem>CONTACT</NavItem>
+        <NavItem isActive={location.pathname === '/contact'}>
+          <Link to="/contact">CONTACTS</Link>
+        </NavItem>
       </NavList>
     </NavContainer>
   );

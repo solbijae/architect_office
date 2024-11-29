@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { PhilosophyContainer, LanguageToggle } from 'styles/Philosophy';
+import { useState } from 'react';
+import { PhilosophyContainer, LanguageToggle, PhilosophyContent } from 'styles/Philosophy';
 
 function Philosophy() {
   const [isChecked, setIsChecked] = useState('ENG');
@@ -16,7 +16,7 @@ function Philosophy() {
       </LanguageToggle>
       
       {isChecked === 'ENG' &&
-        <>
+        <PhilosophyContent>
           <p>
             <strong>Architecture is to Design Relationship</strong>
           </p>
@@ -215,11 +215,11 @@ function Philosophy() {
             architectural visions’. Our works are physical culminations of this
             vision.
           </p>
-        </>
+        </PhilosophyContent>
       }
 
       {isChecked === 'KOR' &&
-        <>
+        <PhilosophyContent>
           <p>
             <strong>건축은 관계를 디자인하는 것</strong>
           </p>
@@ -382,7 +382,7 @@ function Philosophy() {
             비전을 통해서 사람과 사람, 사람과 자연 사이의 화목을 추구한다”는 뜻이다.
           </p>
           <p>우리 사무실의 작업들은 이러한 정신의 물리적 결정체다.</p>
-        </>
+        </PhilosophyContent>
       }
     </PhilosophyContainer>
   );

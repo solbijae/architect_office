@@ -5,7 +5,7 @@ export const ContactWrap = styled.div`
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin-bottom: 70px;
+  margin-top: 48px;
 `;
 
 export const MapContainer = styled.div`

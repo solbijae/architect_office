@@ -5,6 +5,7 @@ import Philosophy from 'components/Philosophy';
 import Awards from 'components/Awards';
 import Publications from 'components/Publications';
 import Exhibitions from 'components/Exhibitions';
+import Footer from 'components/Footer';
 
 function Highlights() {
   const [clickedOption, setClickedOption] = useState('PHILOSOPHY');
@@ -60,6 +61,8 @@ function Highlights() {
         </ul>
       </HighlightsNav>
       {renderContent()}
+
+      <Footer />
     </HighlightContainer>
   );
 }

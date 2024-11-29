@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`
+  position: relative;
+  min-height: calc(100vh - 100px);
+  padding-bottom: 100px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  min-height: 100vh;
 `;
 
 export const ProfileNav = styled.nav`
