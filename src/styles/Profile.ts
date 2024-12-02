@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const ProfileContainer = styled.div`
   position: relative;
-  min-height: calc(100vh - 100px);
-  padding-bottom: 100px;
+  min-height: 100vh;
+  /* padding-bottom: 100px; */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
@@ -56,6 +56,8 @@ export const ProfileWrap = styled.div`
   grid-template-columns: minmax(300px, 400px) 1fr;
   gap: 48px;
   padding: 24px 0;
+  /* min-height: calc(100vh - 100px); */
+  padding-bottom: 100px;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -146,6 +148,8 @@ export const SectionTitle = styled.h3`
 `;
 
 export const TeamProfileWrap = styled.div`
+  /* min-height: calc(100vh - 100px); */
+  padding-bottom: 100px;
   width: 100%;
   text-align: center;
 `;

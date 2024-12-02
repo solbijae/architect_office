@@ -7,6 +7,7 @@ export const ProjectsContainer = styled.div`
   width: 1200px;
   margin: 0 auto;
   background-color: #f7f7f7;
+  user-select: none;
 `;
 
 export const ProjectWrap = styled.div`

@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const FooterWrap = styled.div`
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   height: 100px;
+  user-select: none;
 
   p {
     display: flex;

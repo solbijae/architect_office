@@ -28,6 +28,7 @@ interface ScrollDown {
 export const ImageContainer = styled.div<ScrollDown>`
   position: relative;
   height: calc(100vh - 100px);
+  user-select: none;
 
   svg {
     position: absolute;
@@ -48,11 +49,13 @@ export const Image = styled.img`
   top: 40%;
   left: 50%;
   transform: translate(-50%, -40%);
+  user-select: none;
 `;
 
 export const ProjectWrap = styled.section`
   overflow: hidden;
   border-bottom: 1px solid #ccc;
+  user-select: none;
 `;
 
 export const TitleContainer = styled.div`
