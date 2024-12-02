@@ -23,7 +23,7 @@
 
 ###  [ Profile ]
 - Consolidated separate sections for Hyunjoon Yoo and the Team into one unified profile page.
-- Optimized layout to enhance readability and improve user experience.
+- Optimized layout and scroll design to enhance readability and improve user experience.
 ![profile_1](https://github.com/user-attachments/assets/fb2271aa-ba64-41e3-b96b-f99149afc4f7)
 ![profile_2](https://github.com/user-attachments/assets/222f0b89-03d5-487c-9051-b3e99dd41e8a)
 
