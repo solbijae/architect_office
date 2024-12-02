@@ -42,4 +42,14 @@ export const LanguageToggle = styled.div`
 `;
 
 export const PhilosophyContent = styled.div`
+  p {
+    padding-bottom: 0.25rem;
+    line-height: 1.2;
+  }
+
+  strong {
+    display: block;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
+  }
 `;
