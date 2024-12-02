@@ -1,4 +1,4 @@
-import { PublicationContainer, PublicationWrap, PublicationInfo } from 'styles/Publications';
+import { PublicationContainer, PublicationWrap, PublicationInfo, InfoData } from 'styles/Publications';
 import useFetchData from 'hooks/useFetchData';
 import { Publication } from 'types/publication';
 
@@ -19,17 +19,11 @@ function Publications() {
             <h3>{publication.year}</h3>
             <PublicationInfo>
               {publication.data.map((datum) => (
-                <div key={`${publication.year}-${datum.id}`}>
-                  <div>
-                    <p>{datum.date}</p>
-                  </div>
-                  <div>
-                    <p>{datum.organizer}</p>
-                  </div>
-                  <div>
-                    <p>{datum.title}</p>
-                  </div>
-                </div>
+                <InfoData key={`${publication.year}-${datum.id}`}>
+                  <p>{datum.date}</p>
+                  <p>{datum.organizer}</p>
+                  <p>{datum.title}</p>
+                </InfoData>
               ))}
             </PublicationInfo>
           </PublicationWrap>

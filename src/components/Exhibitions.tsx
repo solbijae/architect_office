@@ -1,4 +1,4 @@
-import { ExhibitionsContainer, ExhibitionsWrap, ExhibitionsInfo } from 'styles/Exhibitions';
+import { ExhibitionsContainer, ExhibitionsWrap, ExhibitionsInfo, InfoData } from 'styles/Exhibitions';
 import useFetchData from 'hooks/useFetchData';
 import { Exhibition } from 'types/exhibitions';
 
@@ -19,14 +19,10 @@ function Exhibitions() {
             <h3>{exhibition.year}</h3>
             <ExhibitionsInfo>
               {exhibition.data.map((datum) => (
-                <div key={`${exhibition.year}-${datum.id}`}>
-                  <div>
-                    <p>{datum.name}</p>
-                  </div>
-                  <div>
-                    <p>{datum.organizer}</p>
-                  </div>
-                </div>
+                <InfoData key={`${exhibition.year}-${datum.id}`}>
+                  <p>{datum.name}</p>
+                  <p>{datum.organizer}</p>
+                </InfoData>
               ))}
             </ExhibitionsInfo>
           </ExhibitionsWrap>

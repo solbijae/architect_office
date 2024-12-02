@@ -1,4 +1,4 @@
-import { AwardsContainer, AwardsWrap, AwardsInfo } from 'styles/Awards';
+import { AwardsContainer, AwardsWrap, AwardsInfo, InfoData } from 'styles/Awards';
 import useFetchData from 'hooks/useFetchData';
 import { Award } from 'types/award';
 
@@ -19,17 +19,11 @@ function Awards() {
             <h3>{award.year}</h3>
             <AwardsInfo>
               {award.data.map((datum) => (
-                <div key={`${award.year}-${datum.id}`}>
-                  <div>
-                    <p>{datum.title}</p>
-                  </div>
-                  <div>
-                    <p>{datum.award}</p>
-                  </div>
-                  <div>
-                    <p>{datum.organizer}</p>
-                  </div>
-                </div>
+                <InfoData key={`${award.year}-${datum.id}`}>
+                  <p>{datum.title}</p>
+                  <p>{datum.organizer}</p>
+                  <p>{datum.award}</p>
+                </InfoData>
               ))}
             </AwardsInfo>
           </AwardsWrap>

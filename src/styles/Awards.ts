@@ -5,9 +5,28 @@ export const AwardsContainer = styled.div`
 `;
 
 export const AwardsWrap = styled.div`
+  padding: 1rem;
+  margin-bottom: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 0px #ccc;
+
+  h3 {
+    padding-bottom: 0.75rem;
+    font-weight: 600;
+  }
 `;
 
-export const AwardsInfo = styled.div``;
+export const AwardsInfo = styled.div`
+  line-height: 1.2;
+`;
+
+export const InfoData = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  line-height: 1.5;
+  color: #666;
+  p:nth-child(1) {
+    color: #000
+  }
+`
