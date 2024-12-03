@@ -76,7 +76,6 @@ export const ProfileInfoWrap = styled.div`
   overflow-y: auto;
   padding-right: 16px;
 
-  /* Styled scrollbar */
   &::-webkit-scrollbar {
     width: 8px;
   }

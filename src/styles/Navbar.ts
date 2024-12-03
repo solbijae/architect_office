@@ -9,7 +9,6 @@ export const NavContainer = styled.div`
   border-bottom: ${({ theme }) => theme.border.gray_1};
 
   &:after {
-    /* clearfix */
     content: '';
     display: table;
     clear: both;
@@ -22,7 +21,6 @@ export const NavLogo = styled.div`
   transform: translateY(-50%);
 `;
 
-// ul 스타일
 export const NavList = styled.ul`
   list-style: none;
   padding: 0;
@@ -33,7 +31,6 @@ export const NavList = styled.ul`
   height: 100%;
 `;
 
-// li 스타일 (float: left 적용)
 export const NavItem = styled.li<{ isActive?: boolean }>`
   float: left;
   margin: 0 15px;
