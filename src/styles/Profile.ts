@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ProfileContainer = styled.div`
   position: relative;
   min-height: 100vh;
-  /* padding-bottom: 100px; */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
@@ -25,8 +24,8 @@ interface NavItemProps {
 }
 
 export const NavItem = styled.li<NavItemProps>`
-  font-weight: ${({ isActive }) => (isActive ? '600' : '400')};
-  color: ${({ isActive }) => (isActive ? '#000' : '#666')};
+  font-weight: ${({ isActive, theme }) => isActive ? theme.title_16_B : theme.body_16_R};
+  color: ${({ isActive, theme }) => isActive ? theme.colors.black : theme.colors.gray_3};
   cursor: pointer;
   position: relative;
   padding-bottom: 8px;
@@ -38,15 +37,15 @@ export const NavItem = styled.li<NavItemProps>`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: ${({ isActive }) => (isActive ? '#000' : 'transparent')};
+    background-color: ${({ isActive, theme }) => isActive ? theme.colors.black : 'transparent'};
     transition: all 0.2s ease;
   }
 
   &:hover {
-    color: #000;
+    color: ${({ theme }) => theme.colors.black};
 
     &:after {
-      background-color: #000;
+      background-color: ${({ theme }) => theme.colors.black};
     }
   }
 `;
@@ -56,7 +55,6 @@ export const ProfileWrap = styled.div`
   grid-template-columns: minmax(300px, 400px) 1fr;
   gap: 48px;
   padding: 24px 0;
-  /* min-height: calc(100vh - 100px); */
   padding-bottom: 100px;
 
   @media (max-width: 768px) {
@@ -68,7 +66,7 @@ export const ProfileWrap = styled.div`
     height: auto;
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    box-shadow: ${({ theme }) => theme.shadows.image};
   }
 `;
 
@@ -84,16 +82,16 @@ export const ProfileInfoWrap = styled.div`
   }
 
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: ${({ theme }) => theme.colors.gray_white1};
     border-radius: 4px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #ddd;
+    background: ${({ theme }) => theme.colors.gray_white2};
     border-radius: 4px;
 
     &:hover {
-      background: #ccc;
+      background: ${({ theme }) => theme.colors.gray_2};
     }
   }
 
@@ -106,8 +104,7 @@ export const ProfileInfoWrap = styled.div`
   }
 
   h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
+    ${({ theme }) => theme.typo.title_16_B};
     margin-bottom: 16px;
     display: flex;
     align-items: center;

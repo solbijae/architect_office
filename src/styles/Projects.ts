@@ -6,7 +6,6 @@ export const ProjectsContainer = styled.div`
   padding-bottom: 100px;
   width: 1200px;
   margin: 0 auto;
-  background-color: #f7f7f7;
   user-select: none;
 `;
 
@@ -66,8 +65,7 @@ export const InfoWrap = styled.div`
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100%;
-  font-size: 1.2rem;
-  font-weight: 500;
+  ${({ theme }) => theme.typo.title_24_B};
   z-index: 1;
 
   p {

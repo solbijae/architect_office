@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // ScrollTrigger 플러그인 임포트
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import ScrollDownIcon from 'assets/icons/ScrollDownIcon';
+
 import {
   HomeContainer,
   ImageContainer,
@@ -13,7 +15,6 @@ import Navbar from 'components/Navbar';
 import Carousel from 'components/Carousel';
 import Contact from 'components/Contact';
 import Footer from 'components/Footer';
-import ScrollDownIcon from 'assets/icons/ScrollDownIcon';
 
 gsap.registerPlugin(ScrollTrigger);
 

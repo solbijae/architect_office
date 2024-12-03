@@ -14,7 +14,7 @@ export const FooterWrap = styled.div`
     position : relative;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
-    color: #656565;
+    ${({ theme }) => theme.typo.body_12_R}
+    color: ${({ theme }) => theme.colors.gray_3};
   }
 `;

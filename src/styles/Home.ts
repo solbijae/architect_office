@@ -1,13 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
-export const HomeContainer = styled.div`
-  position: relative;
-  min-height: calc(100vh - 100px);
-  padding-bottom: 100px;
-  width: 1200px;
-  margin: 0 auto;
-  background-color: #f7f7f7;
-`;
+interface ScrollDown {
+  showScrollIcon: boolean;
+}
 
 const bouncy = keyframes`
   0% {
@@ -21,9 +16,14 @@ const bouncy = keyframes`
   }
 `;
 
-interface ScrollDown {
-  showScrollIcon: boolean;
-}
+export const HomeContainer = styled.div`
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 1200px;
+  min-height: calc(100vh - 100px);
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
+`;
 
 export const ImageContainer = styled.div<ScrollDown>`
   position: relative;
@@ -35,17 +35,17 @@ export const ImageContainer = styled.div<ScrollDown>`
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    animation: ${bouncy} 1.5s linear infinite;
-    opacity: ${({ showScrollIcon }) => (showScrollIcon ? 1 : 0)};
     visibility: ${({ showScrollIcon }) => (showScrollIcon ? 'visible' : 'hidden')};
+    opacity: ${({ showScrollIcon }) => (showScrollIcon ? 1 : 0)};
     transition: opacity 0.5s, visibility 0.5s;
+    animation: ${bouncy} 1.5s linear infinite;
   }
 `;
 
 export const Image = styled.img`
-  width: 1200px;
-  padding: 50px 0 0 0;
   position: absolute;
+  padding: 50px 0 0 0;
+  width: 1200px;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -40%);
@@ -54,16 +54,15 @@ export const Image = styled.img`
 
 export const ProjectWrap = styled.section`
   overflow: hidden;
-  border-bottom: 1px solid #ccc;
+  border-bottom: ${({ theme }) => theme.border.gray_1};
   user-select: none;
 `;
 
 export const TitleContainer = styled.div`
   padding: 20px;
-  font-size: 3rem;
-  font-weight: 600;
+  ${({ theme }) => theme.typo.title_48_B};
 `;
 
 export const Title = styled.p`
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 `;

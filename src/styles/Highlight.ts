@@ -6,7 +6,7 @@ export const HighlightContainer = styled.div`
   padding-bottom: 100px;
   width: 1200px;
   margin: 0 auto;
-  background-color: #f7f7f7;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
 `;
 
 export const HighlightsNav = styled.nav`
@@ -21,8 +21,8 @@ export const HighlightsNav = styled.nav`
 `;
 
 export const NavItem = styled.li<{isActive?: boolean}>`
-  font-weight: ${({ isActive }) => (isActive ? '600' : '400')};
-  color: ${({ isActive }) => (isActive ? '#000' : '#666')};
+  font-weight: ${({ isActive, theme }) => isActive ? theme.title_16_B : theme.body_16_R};
+  color: ${({ isActive, theme }) => isActive ? theme.colors.black : theme.colors.gray_3};
   cursor: pointer;
   position: relative;
   padding-bottom: 8px;
@@ -34,15 +34,15 @@ export const NavItem = styled.li<{isActive?: boolean}>`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: ${({ isActive }) => (isActive ? '#000' : 'transparent')};
+    background-color: ${({ isActive, theme }) => isActive ? theme.colors.black : 'transparent'};
     transition: all 0.2s ease;
   }
 
   &:hover {
-    color: #000;
+    color: ${({ theme }) => theme.colors.black};
 
     &:after {
-      background-color: #000;
+      background-color: ${({ theme }) => theme.colors.black};
     }
   }
 `;

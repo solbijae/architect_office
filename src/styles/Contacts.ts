@@ -6,5 +6,5 @@ export const ContactsContainer = styled.div`
   padding-bottom: 100px;
   width: 1200px;
   margin: 0 auto;
-  background-color: #f7f7f7;
+  background-color: ${({ theme }) => theme.colors.backgroundColor};
 `;

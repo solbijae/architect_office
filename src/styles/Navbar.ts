@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-// Nav 컨테이너 스타일 (clearfix 포함)
 export const NavContainer = styled.div`
   user-select: none;
   position: relative;
   height: 100px;
   display: block;
   background-color: #f7f7f7;
-  border-bottom: 1px solid #ccc;
+  border-bottom: ${({ theme }) => theme.border.gray_1};
 
   &:after {
     /* clearfix */

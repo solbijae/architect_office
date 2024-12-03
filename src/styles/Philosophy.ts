@@ -16,14 +16,14 @@ export const LanguageToggle = styled.div`
     position: relative;
     width: 62px;
     height: 28px;
-    background: #d3d3d3;
+    background: ${({ theme }) => theme.colors.gray_1};
     border-radius: 8px;
     cursor: pointer;
   }
 
   label::before {
     content: "ENG";
-    font-size: 20px;
+    ${({ theme }) => theme.typo.title_24_B};
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,24 +32,24 @@ export const LanguageToggle = styled.div`
   }
 
   #chk1:checked + label {
-    background: rgba(109, 104, 107);
+    background: ${({ theme }) => theme.colors.gray_4};
   }
 
   #chk1:checked + label::before {
     content: "KOR";
-    color: #fff;
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
 
 export const PhilosophyContent = styled.div`
   p {
     padding-bottom: 0.25rem;
-    line-height: 1.2;
+    ${({ theme }) => theme.typo.body_16_12};
   }
 
   strong {
     display: block;
     padding-bottom: 0.75rem;
-    font-weight: 600;
+    ${({ theme }) => theme.typo.title_16_B};
   }
 `;

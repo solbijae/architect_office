@@ -1,3 +1,6 @@
+import useFetchData from 'hooks/useFetchData';
+import { Project } from 'types/project';
+
 import {
   ProjectsContainer,
   ProjectWrap,
@@ -5,10 +8,8 @@ import {
   Image,
   InfoWrap,
 } from 'styles/Projects';
-import useFetchData from 'hooks/useFetchData';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer';
-import { Project } from 'types/project';
 
 function Projects() {
   const { data: projects, error } = useFetchData<Project[]>(
